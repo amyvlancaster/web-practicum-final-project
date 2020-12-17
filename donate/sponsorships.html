@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Fur Friends</title>
+		<meta name="description" content="Fur Friends">
+		<meta name="keywords" content="adoption, shelter, foster, donations, animal, cats, dogs, pets, friends, domestic, spay, neuter, care, volunteer, donate, volunteering">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Local -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+		<!-- Javascript -->
+		<script src="../js/javascript.js"></script>
+	</head>
+	<body>
+				<!-- Form Validaton -->
+		<?php
+
+			// define variables and set to empty values
+			$error = "";
+			$date = $petname = 
+			$fname = $email = $adr = $city = $state = $zip "";
+			$animalname = $honorof = "";
+			$cname = $ccnum = $expmonth = $expyear = $cvv = "";
+
+			if (isset($_POST['submit'])) {
+				$fname = test_input($_POST["fname"]);
+				$email = test_input($_POST["email"]);
+				$adr = test_input($_POST["adr"]);
+				$city = test_input($_POST["city"]);
+				$state = test_input($_POST["state"]);
+				$zip = test_input($_POST["zip"]);
+
+				$animalname = test_input($_POST["animalname"]);
+				$honorof = test_input($_POST["honorof"]);
+
+				$cname = test_input($_POST["cname"]);
+				$ccnum = test_input($_POST["ccnum"]);
+				$expmonth = test_input($_POST["expmonth"]);
+				$expyear = test_input($_POST["expyear"]);
+				$cvv = test_input($_POST["cvv"]);
+				 
+				}
+
+				function test_input($data) {
+				  $data = trim($data);
+				  $data = stripslashes($data);
+				  $data = htmlspecialchars($data);
+				  return $data;
+				}
+
+				header("Location: submissionsuccess.html");
+				?>
+		<!-- Header -->
+		<header>
+			<!-- Navigation -->
+			<nav>
+				<!-- Logo -->
+				<a href="../index.html"><img class="logo" src="../images/ff-logo.png"></a>
+				<div class="navbar">
+					<!-- Adopt -->
+					<div class="dropdown">
+						<button class="dropbtn">Adopt</button>
+						<div class="dropdown-content dp-content-1">
+							<a href="../adopt/howtoadopt.html">How to Adopt</a>
+							<a href="../adopt/adoptiondogs.html">Dogs for Adoption</a>
+							<a href="../adopt/adoptioncats.html">Cats for Adoption</a>
+							<a href="../adopt/adoptionother.html">Other Pets</a>
+							<a href="../adopt/applicationdog.html">Dog Application</a>
+							<a href="../adopt/applicationcat.html">Cat Application</a>
+							<a href="../adopt/applicationother.html">Other Pets Application</a>
+						</div>
+					</div>
+					<!-- Donate -->
+					<div class="dropdown">
+						<button class="dropbtn">Donate</button>
+						<div class="dropdown-content dp-content-2">
+							<a href="directdonationform.html">Donate Today!</a>
+							<a href="sponsorships.html">Sponsorships</a>
+							<a href="supplydrive.html">Supply Drive</a>
+						</div>
+					</div>
+					<!-- Volunteer -->
+					<div class="dropdown">
+						<button class="dropbtn">Volunteer</button>
+						<div class="dropdown-content dp-content-3">
+							<a href="../volunteer/communityevents.html">Community Events</a>
+							<a href="../volunteer/foster.html">Foster an Animal</a>
+							<a href="../volunteer/volunteeropportunities.html">Help at the Shelter</a>
+						</div>
+					</div>
+					<!-- Learn -->
+					<div class="dropdown">
+						<button class="dropbtn">Learn</button>
+						<div class="dropdown-content dp-content-4">
+							<a href="../learn/aboutus.html">About Us</a>
+							<a href="../learn/petcare101.html">Petcare 101</a>
+							<a href="../learn/spayneuter.html">Spay/Neuter Info</a>
+						</div>
+					</div>
+					<!-- Social media icons -->
+					<div class="socialiconstop">
+						<a href="#"><img class="socialtop" src="../images/social/fb-orange.png"></a>
+						<a href="#"><img class="socialtop" src="../images/social/twitter-orange.png"></a>
+						<a href="#"><img class="socialtop" src="../images/social/ig-orange.png"></a>
+						
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Begin Form -->
+			<form class="petadoptform" action="submissionsuccess.html" method="post">
+				<h1 class="adopttitle">Sponsorhips</h1>
+				<p class="sponsor-description">By directly sponsoring an animal at Fur Friends, you are helping them in many more ways than can be imagined. You're providing a comfortable living space, plenty of food and cleaning supplies, and comfort and love. Use the form below to make a sponsorship contribution - it can be in your name, in care of someone else, and you can sponsor whichever animal you'd like.</p>
+		        <h3 class="donation">Billing Address</h3>
+		        <label for="fname"><i class="fa fa-user"></i> Full Name</label><br>
+		        <input type="text" id="fname" name="firstname" placeholder="John M. Doe"><br><br>
+		        <label for="email"><i class="fa fa-envelope"></i> Email</label><br>
+		        <input type="text" id="email" name="email" placeholder="john@example.com"><br><br>
+		        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label><br>
+		        <input type="text" id="adr" name="address" placeholder="542 W. 15th Street"><br><br>
+		        <label for="city"><i class="fa fa-institution"></i> City</label><br>
+		        <input type="text" id="city" name="city" placeholder="New York"><br><br>
+	            <label for="state">State</label><br>
+	            <input type="text" id="state" name="state" placeholder="NY"><br><br>
+	            <label for="zip">Zip</label><br>
+	            <input type="text" id="zip" name="zip" placeholder="10001"><br><br>
+
+	            <h3 class="donation">Sponsorship Info</h3>
+	            <label for="animalname">Name of Animal You'd Like to Sponsor</label><br>
+	            <input type="text" id="animalname" name="animalname"><br><br>
+	            <label for="honorof">Sponsorship In Honor Of</label><br>
+	            <input type="text" id="honorof" name="honorof"><br><br>
+
+		        <h3 class="donation">Payment</h3>
+		        <label for="fname">Accepted Cards</label>
+		        	<div class="icon-container">
+		            	<i class="fa fa-cc-visa" style="color:navy;"></i>
+		            	<i class="fa fa-cc-amex" style="color:blue;"></i>
+		            	<i class="fa fa-cc-mastercard" style="color:red;"></i>
+		            	<i class="fa fa-cc-discover" style="color:orange;"></i>
+		            </div><br>
+		        <label for="cname">Name on Card</label><br>
+		        <input type="text" id="cname" name="cardname" placeholder="John More Doe"><br><br>
+		        <label for="ccnum">Credit card number</label><br>
+		        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br><br>
+		        <label for="expmonth">Exp Month</label><br>
+		        <input type="text" id="expmonth" name="expmonth" placeholder="September"><br><br>
+               	<label for="expyear">Exp Year</label><br>
+              	<input type="text" id="expyear" name="expyear" placeholder="2018"><br><br>
+               	<label for="cvv">CVV</label><br>
+                <input type="text" id="cvv" name="cvv" placeholder="352"><br><br>
+        		<a href="submissionsuccess.html"><button class="appsubmit" name="submit" value="submit">Submit</button></a>
+      		</form>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="footernav">
+				<a href="../adopt/howtoadopt.html">Adopt</a>
+				<a href="directdonationform.html">Donate</a>
+				<a href="../volunteer/volunteeropportunities.html">Volunteer</a>
+				<a href="../learn/generalinfo.html">Contact</a>
+				<a href="#">Privacy Policy</a>
+			</div>
+			<!-- Social media icons -->
+			<div class="socialiconsbottom">
+				<a href="#"><img class="socialbottom" src="../images/social/ig-black.png"></a>
+				<a href="#"><img class="socialbottom" src="../images/social/twitter-black.png"></a>
+				<a href="#"><img class="socialbottom" src="../images/social/fb-black.png"></a>
+					</div>
+			<div class="copyright">
+				<p>© 2020 Fur Friends. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
