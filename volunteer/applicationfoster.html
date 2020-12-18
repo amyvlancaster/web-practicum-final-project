@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Fur Friends</title>
+		<meta name="description" content="Fur Friends">
+		<meta name="keywords" content="adoption, shelter, foster, donations, animal, cats, dogs, pets, friends, domestic, spay, neuter, care, volunteer, donate, volunteering">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Local -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- Bootstrap CSS -->
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+		<!-- Javascript -->
+		<script src="../js/javascript.js"></script>
+	</head>
+	<body>
+				<!-- Form Validaton -->
+		<?php
+
+			// define variables and set to empty values
+			$error = "";
+			$date = $petname = 
+			$fname = $lname = $address1 = $address2 = $city = $state = $zipcode = $phone = $email = 
+			$adults = $children = $childrenage = $agree = $rentown = $landlord = $homedescription = 
+			$ownedpet = $history = $dead = $babies = $givenup = $current = $listpets = $petpreference = $numofpets = 
+			$relive = $worktime = $alone = $kept = $spendtime = $sleep = $references = "";
+
+			if (isset($_POST['submit'])) {
+				$date = test_input($_POST["date"]);
+				$petname = test_input($_POST["petname"]);
+
+				$fname = test_input($_POST["fname"]);
+				$lname = test_input($_POST["lname"]);
+				$address1 = test_input($_POST["address1"]);
+				$address2 = test_input($_POST["address2"]);
+				$city = test_input($_POST["city"]);
+				$state = test_input($_POST["state"]);
+				$zipcode = test_input($_POST["zipcode"]);
+				$phone = test_input($_POST["phone"]);
+				$email = test_input($_POST["email"]);
+
+				$adults = test_input($_POST["adults"]);
+				$children = test_input($_POST["children"]);
+				$childrenage = test_input($_POST["childrenage"]);
+				$agree = test_input($_POST["agree"]);
+				$rentown = test_input($_POST["rentown"]);
+				$landlord = test_input($_POST["landlord"]);
+				$homedescription = test_input($_POST["homedescription"]);
+
+				$ownedpet = test_input($_POST["ownedpet"]);
+				$history = test_input($_POST["history"]);
+				$dead = test_input($_POST["dead"]);
+				$babies = test_input($_POST["babies"]);
+				$givenup = test_input($_POST["givenup"]);
+				$current = test_input($_POST["current"]);
+				$listpets = test_input($_POST["listpets"]);
+
+				$petpreference = test_inout($_POST["petpreference"]);
+				$numofpets = test_input($_POST["numofpets"]);
+
+				$relieve = test_input($_POST["relieve"]);
+				$worktime = test_input($_POST["worktime"]);
+				$alone = test_input($_POST["alone"]);
+				$kept = test_input($_POST["kept"]);
+				$spendtime = test_input($_POST["spendtime"]);
+				$sleep = test_input($_POST["sleep"]);
+
+				$references = test_input($_POST["references"]);
+				 
+				}
+
+				function test_input($data) {
+				  $data = trim($data);
+				  $data = stripslashes($data);
+				  $data = htmlspecialchars($data);
+				  return $data;
+				}
+
+				header("Location: submissionsuccess.html");
+				?>
+		<!-- Header -->
+		<header>
+			<!-- Navigation -->
+			<nav>
+				<!-- Logo -->
+				<a href="../index.html"><img class="logo" src="../images/ff-logo.png"></a>
+				<div class="navbar">
+					<!-- Adopt -->
+					<div class="dropdown">
+						<button class="dropbtn">Adopt</button>
+						<div class="dropdown-content dp-content-1">
+							<a href="../adopt/howtoadopt.html">How to Adopt</a>
+							<a href="../adopt/adoptiondogs.html">Dogs for Adoption</a>
+							<a href="../adopt/adoptioncats.html">Cats for Adoption</a>
+							<a href="../adopt/adoptionother.html">Other Pets</a>
+							<a href="../adopt/applicationdog.html">Dog Application</a>
+							<a href="../adopt/applicationcat.html">Cat Application</a>
+							<a href="../adopt/applicationother.html">Other Pets Application</a>
+						</div>
+					</div>
+					<!-- Donate -->
+					<div class="dropdown">
+						<button class="dropbtn">Donate</button>
+						<div class="dropdown-content dp-content-2">
+							<a href="../donate/directdonationform.html">Donate Today!</a>
+							<a href="../donate/sponsorships.html">Sponsorships</a>
+							<a href="../donate/supplydrive.html">Supply Drive</a>
+						</div>
+					</div>
+					<!-- Volunteer -->
+					<div class="dropdown">
+						<button class="dropbtn">Volunteer</button>
+						<div class="dropdown-content dp-content-3">
+							<a href="communityevents.html">Community Events</a>
+							<a href="foster.html">Foster an Animal</a>
+							<a href="volunteeropportunities.html">Help at the Shelter</a>
+						</div>
+					</div>
+					<!-- Learn -->
+					<div class="dropdown">
+						<button class="dropbtn">Learn</button>
+						<div class="dropdown-content dp-content-4">
+							<a href="../learn/aboutus.html">About Us</a>
+							<a href="../learn/petcare101.html">Petcare 101</a>
+							<a href="../learn/spayneuter.html">Spay/Neuter Info</a>
+						</div>
+					</div>
+					<!-- Social media icons -->
+					<div class="socialiconstop">
+						<a href="#"><img class="socialtop" src="../images/social/fb-orange.png"></a>
+						<a href="#"><img class="socialtop" src="../images/social/twitter-orange.png"></a>
+						<a href="#"><img class="socialtop" src="../images/social/ig-orange.png"></a>
+						
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>	
+			<!-- Begin Form -->
+			<form class="petadoptform" action="submissionsuccess.html" method="post">
+				<h1 class="adopttitle">Foster Pet Form</h1>
+				<label for="date">Today's Date:</label><br>
+				<input type="date" id="date" name="date"><br><br>
+
+				<h2>Contact Info</h2>
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname"><br><br>
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname"><br><br>
+				<label for="address1">Address 1:</label><br>
+				<input type="text" id="address1" name="address1"><br><br>
+				<label for="address2">Address 2:</label><br>
+				<input type="text" id="address2" name="address2"><br><br>
+				<label for="city">City:</label><br>
+				<input type="text" id="city" name="city"><br><br>
+				<label for="state">State:</label><br>
+				<input type="text" id="state" name="state"><br><br>
+				<label for="zipcode">Zipcode:</label><br>
+				<input type="text" id="zipcode" name="zipcode"><br><br>
+				<label for="phone">Main phone number:</label><br>
+				<input type="text" id="phone" name="phone"><br><br>
+				<label for="email">Email address:</label><br>
+				<input type="text" id="email" name="email"><br>
+
+				<h2>Household Info</h2>
+				<label for="adults">How many adults live in your home? (18+)</label><br>
+				<input type="text" id="adults" name="adults"><br><br>
+				<label for="children">How many children live in your home? (under 18)</label><br>
+				<input type="text" id="children" name="children"><br><br>
+				<label for="childrenage">How old are they?</label><br>
+				<input type="text" id="childrenage" name="childrenage"><br><br>
+				<label for="agree">Are all members of the household in agreement about fostering a pet?</label><br>
+				<input type="radio" id="yes" name="agree" value="Yes">
+				<label class="yn" for="yes">Yes</label><br>
+				<input type="radio" id="no" name="agree" value="No">
+				<label class="yn" for="no">No</label><br><Br>
+				<label for="rentown">Do you own or rent your home?</label><br>
+				<input type="radio" id="own" name="rentown" value="own">
+				<label class="yn" for="own">Own</label><br>
+				<input type="radio" id="rent" name="rentown" value="rent">
+				<label class="yn" for="rent">Rent</label><br><br>
+				<label for="landlord">Please provide your landlord's name and phone number to contact if you rent your home:</label><br>
+				<input type="text" id="landlord" name="landlord"><br><br>
+				<label for="homedescription">Please describe the size and layout of your home:</label><br>
+				<textarea name="homedescription" rows="10" cols="45"></textarea><br>
+
+				<h2>Experience</h2>
+				<p><em>Note: Experience is not required to own a pet unless specifically stated in the pet's desccription.</em></p>
+				<label for="ownedpet">Have you ever lived with a pet before?</label><br>
+				<input type="radio" id="yes" name="ownedpet" value="Yes">
+				<label class="yn" for="yes">Yes</label><br>
+				<input type="radio" id="no" name="ownedpet" value="No">
+				<label class="yn" for="no">No</label><br><br>
+				<label for="history">Please describe your past history and experience with pets, if any:</label><br>
+				<textarea name="history" rows="10" cols="45"></textarea><br><br>
+				<label for="dead">If your last pet has passed away, please state the name and date of death:</label><br>
+				<input type="text" id="dead" name="dead"><br><br>
+				<label for="babies">Has your pet ever produced babies?</label><br>
+				<input type="radio" id="yes" name="babies" value="Yes">
+				<label class="yn" for="yes">Yes</label><br>
+				<input type="radio" id="no" name="babies" value="No">
+				<label class="yn" for="no">No</label><br><br>
+				<label for="givenup">Have you ever surrendered a pet to a shelther or resuce service?</label><br>
+				<input type="radio" id="yes" name="givenup" value="Yes">
+				<label class="yn" for="yes">Yes</label><br>
+				<input type="radio" id="no" name="givenup" value="No">
+				<label class="yn" for="no">No</label><br><Br>
+				<label for="current">Do you currently own a pet?</label><br>
+				<input type="radio" id="yes" name="current" value="Yes">
+				<label class="yn" for="yes">Yes</label><br>
+				<input type="radio" id="no" name="current" value="no">
+				<label class="yn" for="no">No</label><br><br>
+				<label for="listpets">If yes, please let us know the type of animal, along with how many:</label><br>
+				<input type="text" id="listpets" name="listpets"><br>
+
+				<h2>Care</h2>
+				<label for="petpreference">Would you prefer to foster a dog, a cat, or a different animal?</label><br>
+				<input type="radio" id="dog" name="petpreference" value="dog">
+				<label class="yn" for="dog">Dog</label><br>
+				<input type="radio" id="cat" name="petpreference" value="cat">
+				<label class="yn" for="cat">Cat</label><br>
+				<input type="radio" id="other" name="petpreference" value="other pet">
+				<label class="yn" for="other">A different animal</label><br>
+				<input type="radio" id="none" name="petpreference" value="no preference">
+				<label class="yn" for="none">No preference</label><br><br>
+				<label for="numofpets">How many animals can you foster at one time?</label><br>
+				<input type="radio" id="one" name="numofpets" value="one">
+				<label class="yn" for="one">Only 1</label><br>
+				<input type="radio" id="2to5" name="numofpets" value="2 to 5">
+				<label class="yn" for="2to5">2 to 5</label><br>
+				<input type="radio" id="6ormore" name="numofpets" value="6 or more">
+				<label class="yn" for="6ormore">6 to 8</label><br>
+				<input type="radio" id="none" name="numofpets" value="no preference">
+				<label class="yn" for="none">No preference</label><br><br>
+				<label for="relieve">How do you plan for your foster pet to relieve itself?</label><br>
+				<textarea name="relieve" rows="10" cols="45"></textarea><br><br>
+				<label for="worktime">Do all the adults work full-time?</label><br>
+				<input type="radio" id="yes" name="worktime" value="yes">
+				<label class="yn" for="yes">Yes</label><br>
+				<input type="radio" id="no" name="worktime" value="no">
+				<label class="yn" for="no">No</label><br><br>
+				<label for="alone">How many hours a day will your foster pet be alone?</label><br>
+				<input type="text" id="alone" name="alone"><br><br>
+				<label for="kept">Where will your new cat be kept when it is alone?</label><br>
+				<input type="text" id="kept" name="kept"><br><br>
+				<label for="spendtime">How many hours a day will you spend with your foster pet?</label><br>
+				<input type="text" id="spendtime" name="spendtime"><br><br>
+				<label for="sleep">Where will your foster pet sleep?</label><br>
+				<input type="text" id="sleep" name="sleep"><br>
+
+				<h2>References</h2>
+				<label for="references">Please provide your veterinarian's name and phone number (if you have one). If you do not have a veterinarian, provide the name and phone number of a non-family member that we may contact.</label><br>
+				<textarea name="reference" rows="10" cols="45"></textarea><br><br>
+				<em>Note: Fostering a pet of any kind is a long-term committment. Please be sure you have heavily considered all your options and you have appropriately financed for fostering your pet, including yearly boosters, heartworm and flea/tick care, spaying/neutering, etc.</em><br><br>
+				<button class="appsubmit" name="submit" value="submit">Submit</button>
+			</form>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="footernav">
+				<a href="../adopt/howtoadopt.html">Adopt</a>
+				<a href="../donate/directdonation.html">Donate</a>
+				<a href="volunteeropportunities.html">Volunteer</a>
+				<a href="../learn/generalinfo.html">Contact</a>
+				<a href="#">Privacy Policy</a>
+			</div>
+			<!-- Social media icons -->
+			<div class="socialiconsbottom">
+				<a href="#"><img class="socialbottom" src="../images/social/ig-black.png"></a>
+				<a href="#"><img class="socialbottom" src="../images/social/twitter-black.png"></a>
+				<a href="#"><img class="socialbottom" src="../images/social/fb-black.png"></a>
+					</div>
+			<div class="copyright">
+				<p>© 2020 Fur Friends. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
