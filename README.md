@@ -41,7 +41,13 @@ The client I decided to choose was an animal shelter. They asked for a site that
 ![photography](https://i.ibb.co/LSQ5rzM/Screen-Shot-2020-12-20-at-11-09-02-AM.png)
 *Style guide was later adjusted to a change in the logo that removed the teal color. Primary color ended up being orange, with the secondary color staying beige.*
 
-
+####Prototype/First Draft
+*The prototype was submitted with a workable draft of the homepage.*
+![Prototype of the homepage](https://i.ibb.co/FmbkN7X/Homepage.png)
+![Prototype of the adopt section](https://i.ibb.co/QCJ1jKj/Adopt.png)
+![Prorotype of the donate section](https://i.ibb.co/LQtzpVG/Donate.png)
+![Prototype of the learn section](https://i.ibb.co/Jy8hnjV/Learn.png)
+![Prototype of the volunteer section](https://i.ibb.co/KWQkzSr/Volunteer.png)
 
 ## Second Draft
 
