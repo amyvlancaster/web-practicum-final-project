@@ -4,8 +4,8 @@ Final project for my Web Development Degree.
 ## Table of Contents
 * [Objective](https://github.com/amyvlancaster/web-practicum-final-project/blob/main/README.md#objective)
 * [Process Outline](https://github.com/amyvlancaster/web-practicum-final-project/blob/main/README.md#process-outline)
-* First Draft and Changes to Make
-* Second Draft 
+* [First Draft and Changes to Make](https://github.com/amyvlancaster/web-practicum-final-project/blob/main/README.md#first-draft-and-changes-to-make)
+* [Second Draft](https://github.com/amyvlancaster/web-practicum-final-project/blob/main/README.md#second-draft)
 * Final Review and Live Site Link 
 
 ## Objective
