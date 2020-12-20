@@ -26,7 +26,7 @@ This repository contains the final code for the finished website, as well as ass
 10. Create a video showing the current status of the website;
 11. Determine an appropriate CRM service for the client;
 12. Add a blog per the client's request and submit a blog post template;
-13. Submit the second draft;
+13. Submit the second draft and include security measures, including form validation;
 14. Reflection and site launch. 
 
 ## First Draft and Changes to Make
