@@ -1,5 +1,5 @@
 # web-practicum-final-project
-Final project for my Web Development Degree.
+Final project for my Web Development Degree - December 2020
 
 ## Table of Contents
 * [Objective](https://github.com/amyvlancaster/web-practicum-final-project/blob/main/README.md#objective)
@@ -30,6 +30,18 @@ This repository contains the final code for the finished website, as well as ass
 14. Reflection and site launch. 
 
 ## First Draft and Changes to Make
+The client I decided to choose was an animal shelter. They asked for a site that could provide listings for available animals for adoption, as well as a calendar of events, forms for donations and sponsorships, and a blog. 
+
+#### Sitemap
+![image of sitemap](https://i.ibb.co/j5HDzgG/Lancaster-Week5.png)
+#### Style Guide
+![typography](https://i.ibb.co/9sLGdb7/Screen-Shot-2020-12-20-at-11-08-26-AM.png)
+![color palette](https://i.ibb.co/L5bXPp3/Screen-Shot-2020-12-20-at-11-08-46-AM.png)
+![iconography](https://i.ibb.co/Rvv6w7F/Screen-Shot-2020-12-20-at-11-08-54-AM.png)
+![photography](https://i.ibb.co/LSQ5rzM/Screen-Shot-2020-12-20-at-11-09-02-AM.png)
+*Style guide was later adjusted to a change in the logo that removed the teal color. Primary color ended up being orange, with the secondary color staying beige.*
+
+
 
 ## Second Draft
 
