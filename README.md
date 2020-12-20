@@ -1,4 +1,4 @@
-# web-practicum-final-project
+# Final Project for WEBD480 - Web Design & Development Practicum - Fall 2020
 Final project for my Web Development Degree - December 2020
 
 ## Table of Contents
