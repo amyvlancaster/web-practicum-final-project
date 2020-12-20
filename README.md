@@ -50,6 +50,28 @@ The client I decided to choose was an animal shelter. They asked for a site that
 ![Prototype of the learn section](https://i.ibb.co/R9K9BTB/Learn2.png)
 ![Prototype of the volunteer section](https://i.ibb.co/KWQkzSr/Volunteer.png)
 
+Changes made included overall layout design to the pages to make them more cohesive, as well as including a blog section to the site. 
+
 ## Second Draft
 
+Second draft was a submission of the site being mostly completed. Blog was created on Wordpress. 
+
+Critique from fellow students included the following:
+
+"First off, I really like the way you utilized branding colors.  Your use of orange was consistent throughout the entire site, with headers, links, and icons.  I also thought the artwork you used worked really well throughout the site.  Did you create all those icons/artwork or did you outsource it?  I think the site works great on mobile devices, but as you said, could use some work on desktop devices.  I have found the use of css grids to be super helpful in creating responsive blocks or pages.  You can check it out here if you haven't used it before: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout (Links to an external site.).  I also noticed that when hovering over the top level nav bar links the drop-down options are aligned to the left, which feels a little awkward to me (I'm used to them being either directly below or aligned a bit to the right).  That may just be a personal preference to me but I found that my cursor didn't naturally drop in that direction.  Finally, I think it would help to add "cursor: pointer;" to your hover effects on all of your buttons and links.  This just changes the cursor to the pointing finger, which is a nice indicator that you're hovering over a link."
+
+"I really like the design of your website it is very friendly and welcoming. All the images and icons are excellent, and the best part is how easy all the text is to read. Great use of contrasting colors especially with the text on the images. One of the biggest things I noticed when researching local real estate websites was the number of sites that would have text that was difficult to read.
+
+My favorite page is probably help at the shelter, I love the images you used especially the one in the feeding and cleaning section. I did notice what you were talking about with the responsive design on this page, the images were going over the text when you bring it down to a mobile view. It seems like you are close though, just minor tweaks needed.
+
+Really great job on everything, particularly with all the images, icons, and color choices."
+
 ## Final Review and Live Site Link
+
+Final review critique was the following:
+
+"Overall, I loved your design and I think you captured exactly what FurFriends was looking for in a redevelopment. 
+
+Navigation was generally very easy, though I did notice a couple of oddities, like the first cat on the list linking to Buddy, a dog. Also, donate in footer led to 404. Site had tremendous visual appeal, with excellent use of graphics to evoke appropriate emotions, and forms were easy to read. There were a few spelling errors in forms. I would recommend a bit more consistency in font size on different pages, i.e. community events is large, but fostering is much smaller in comparison. Learn doesn't have any text, just a graphic. From a user point of view - users love consistency - this can work in a web site such as this one but using this same design for a commercial breeder with these minor differences, for example, would be something that could cause someone to go elsewhere."
+
+[Click here to view the final site.](http://furfriends.amylancaster.net)
