@@ -73,5 +73,3 @@ Final review critique was the following:
 "Overall, I loved your design and I think you captured exactly what FurFriends was looking for in a redevelopment. 
 
 Navigation was generally very easy, though I did notice a couple of oddities, like the first cat on the list linking to Buddy, a dog. Also, donate in footer led to 404. Site had tremendous visual appeal, with excellent use of graphics to evoke appropriate emotions, and forms were easy to read. There were a few spelling errors in forms. I would recommend a bit more consistency in font size on different pages, i.e. community events is large, but fostering is much smaller in comparison. Learn doesn't have any text, just a graphic. From a user point of view - users love consistency - this can work in a web site such as this one but using this same design for a commercial breeder with these minor differences, for example, would be something that could cause someone to go elsewhere."
-
-[Click here to view the final site.](http://furfriends.amylancaster.net)
